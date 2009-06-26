@@ -31,7 +31,7 @@ $response->is_success or
 
 my $content = $response->content;
 
-my ( $result ) = $content =~ m|<td nowrap><font size=\+1><b>(.*?)</b></td>|;
+my ( $result ) = $content =~ m|<td nowrap ><h2 class=r style="font-size:138%"><b>(.*?)</b></h2>|;
 
 if ( $result ) {
 
